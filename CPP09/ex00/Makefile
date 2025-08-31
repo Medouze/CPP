@@ -1,13 +1,13 @@
 CXX = c++
 CXXFLAGS = -Wall -Wextra -Werror -std=c++98
 
-NAME = container
+NAME = btc
 
-SRCS = main.cpp
+SRCS = main.cpp BitcoinExchange.cpp
 
 OBJS = $(SRCS:.cpp=.o)
 
-HEADERS = MutantStack.hpp
+HEADERS = BitcoinExchange.hpp
 
 all: $(NAME)
 
