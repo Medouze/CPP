@@ -11,5 +11,10 @@ int main(int argc, char **argv)
     }
     RPN calc(argc, argv);
     calc.operation();
+
+    RPN empty;
+    empty.operation();
+    empty.setStr("4 4 4 +");
+    empty.operation();
     return 0;
 }

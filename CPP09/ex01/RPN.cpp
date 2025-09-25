@@ -16,11 +16,17 @@ RPN& RPN::operator=(const RPN& other){
 RPN::~RPN(){}
 
 int RPN::validStr(){
+    if (str.empty())
+        return 0;
     for (unsigned int i = 0; i < str.length(); i++){
         if ((!isdigit(str[i]) && !isspace(str[i]) && str[i] != '+' && str[i] != '-' && str[i] != '/' && str[i] != '*') || (isdigit(str[i]) && i + 1 < str.length() && isdigit(str[i + 1])))
             return 0;
     }
     return 1;
+}
+
+void RPN::setStr(std::string newStr){
+    this->str = newStr;
 }
 
 void RPN::printStack(std::stack<int> s) const{  // Pass by value to make a copy

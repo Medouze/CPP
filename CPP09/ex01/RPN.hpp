@@ -22,6 +22,9 @@ class RPN
 
         //Final operation
         void operation();
+
+        //Setter
+        void setStr(std::string str);
 };
 
 #endif
