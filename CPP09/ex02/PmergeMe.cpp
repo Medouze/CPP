@@ -279,7 +279,6 @@ std::deque<int> PmergeMe::dequeSort(){
         secondElements.push_back(pairs[i].second);
     }
 
-    //Insert remaining elements 
     insertRemainDeque(firstElements, secondElements);
     return firstElements;
 }
