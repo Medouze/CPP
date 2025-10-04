@@ -8,7 +8,6 @@ int main(int argc, char **argv)
     PmergeMe test;
     PmergeMe test2(argc, argv);
     //test.fillContainers();
-    test2.fillContainers();
-    test2.printContainers();
+    test2.MergeMe();
     return 0;
 }
